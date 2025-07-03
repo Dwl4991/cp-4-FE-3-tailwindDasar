@@ -1,0 +1,20 @@
+# node modules
+node_modules/
+
+# output build (jika pakai Vite/Webpack)
+dist/
+build/
+
+# environment file (jika kamu pakai)
+.env
+
+# log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# editor configs (opsional)
+.vscode/
+.idea/
