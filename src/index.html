@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <title>Document</title>
+    <style>
+      html,
+      body {
+        overflow-x: hidden;
+        max-width: 100vw;
+      }
+      * {
+        border: 1px solid red;
+      }
+    </style>
   </head>
-  <body>
-    <header class="px-6 py-4 bg-[#1FBBA6]">
+  <body class="overflow-x-hidden">
+    <header class="px-6 py-4 bg-[#1FBBA6] max-w-screen-xl mx-auto w-full">
       <div class="flex justify-between text-white">
-        <h1 class="text-2xl">CODE<span class="font-bold">POLITAN</span></h1>
-        <nav class="space-x-4 text-lg">
+        <h1 class="text-2xl md:text-sm">
+          CODE<span class="font-bold">POLITAN</span>
+        </h1>
+        <nav class="space-x-4 text-lg max-sm:hidden">
           <a href="#">Kenapa Kamu</a>
           <a href="#">Keunggulan</a>
           <a href="#">Gabung</a>
@@ -18,7 +30,9 @@
       </div>
     </header>
     <!-- hero section -->
-    <section class="pt-40 pb-24 px-6 text-center">
+    <section
+      class="max-w-screen-xl mx-auto w-full pt-40 pb-24 px-6 text-center md:px-6"
+    >
       <div class="">
         <h2 class="text-5xl font-bold leading-tight mb-6">
           Belajar Ngoding asik bareng
@@ -29,7 +43,7 @@
           jaid programer?
         </p>
       </div>
-      <div class="mt-15 font-bold">
+      <div class="mt-15 font-bold flex flex-col md:flex-row flex-wrap gap-2">
         <a
           href="#"
           class="px-6 py-3 bg-white rounded-2xl border-2 border-[#1FBBA6] hover:bg-gray-700 hover:text-white hover:border-gray-700"
@@ -46,10 +60,10 @@
     <!-- kenapa section -->
     <section class="mb-7">
       <div class="px-6">
-        <h2 class="text-2xl font-bold text-center mb-6">
+        <h2 class="text-2xl font-bold text-center mb-10">
           Kenapa harus Belajar di CODEPOLITAN?
         </h2>
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-3 gap-6 md:text-center">
           <div
             class="bg-white p-6 rounded-lg shadow-lg hover:bg-[#1FBBA6] hover:text-white duration-300 hover:shadow-2xl"
           >
@@ -81,7 +95,25 @@
     <section></section>
     <!-- ./ keunggulan section -->
     <!-- CTA section -->
-    <section></section>
+    <section class="py-15 text-center bg-[#1FBBA6] text-white">
+      <h2 class="text-2xl font-bold mb-4">
+        Siap jadi prograner handal tapi tetap ngoding?
+      </h2>
+      <p class="mb-8">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis velit,
+        ullam nobis nostrum earum exercitationem pariatur. Quisquam veritatis
+        voluptatum, quasi tempora earum quae debitis? Id, vitae?
+      </p>
+      <a
+        href="#"
+        class="bg-white text-black py-4 px-6 rounded-lg hover:bg-gray-700 hover:text-[#1FBBA6] transition duration-700 font-semibold"
+        >Daftar Sekarang</a
+      >
+    </section>
     <!-- ./ CTA section -->
+
+    <footer class="py-6 text-center text-sm mt-12 text-gray-500 text-shadow-sm">
+      <p>&copy; 2025 CODEPOLITAN. dibuat dengan cinta dan tailwind css</p>
+    </footer>
   </body>
 </html>
